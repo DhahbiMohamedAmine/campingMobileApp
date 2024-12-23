@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     LoginResponse loginResponse = response.body();
                     if (loginResponse != null) {
-                        // Save the token and user info (you might want to use SharedPreferences for this)
+
                         // For now, we'll just navigate to MainActivity
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);

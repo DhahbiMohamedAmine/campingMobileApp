@@ -50,7 +50,6 @@ public class TripDetailActivity extends AppCompatActivity {
     }
 
     private String formatDate(String date) {
-        // Implement date formatting logic here
         return date;
     }
 }

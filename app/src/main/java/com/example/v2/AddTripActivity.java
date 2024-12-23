@@ -33,8 +33,6 @@ public class AddTripActivity extends AppCompatActivity {
                 if (validateInput()) {
                     submitTrip();}}});}
     private boolean validateInput() {
-        // Add your validation logic here
-        // For simplicity, we'll just check if the required fields are not empty
         if (editTextType.getText().toString().trim().isEmpty() ||
                 editTextLieuDepart.getText().toString().trim().isEmpty() ||
                 editTextLieuDestination.getText().toString().trim().isEmpty() ||

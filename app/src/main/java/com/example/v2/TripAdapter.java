@@ -28,7 +28,6 @@ public class TripAdapter extends RecyclerView.Adapter<TripAdapter.TripViewHolder
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_trip, parent, false);
         return new TripViewHolder(view);
     }
-
     @Override
     public void onBindViewHolder(@NonNull TripViewHolder holder, int position) {
         Trip trip = trips.get(position);
@@ -66,9 +65,9 @@ public class TripAdapter extends RecyclerView.Adapter<TripAdapter.TripViewHolder
             if (trip.getDateDepart() != null && !trip.getDateDepart().isEmpty()) {
                 try {
                     String[] dateParts = trip.getDateDepart().split("T");
-                    formattedDate = dateParts[0]; // This will give us YYYY-MM-DD
+                    formattedDate = dateParts[0]; // twali form yyyy-mm-dd
                 } catch (Exception e) {
-                    formattedDate = trip.getDateDepart(); // If parsing fails, use the original string
+                    formattedDate = trip.getDateDepart(); // snn format 3adi
                 }
             }
             textViewDepartureDate.setText("Date de départ: " + formattedDate);
