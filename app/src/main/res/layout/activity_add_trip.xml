@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ID (auto-generated, no input needed for ID) -->
+    <EditText
+        android:id="@+id/editTextType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLieuDepart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lieu de départ"
+        android:layout_below="@id/editTextType"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextLieuDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lieu de destination"
+        android:layout_below="@id/editTextLieuDepart"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextDateDepart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date de départ"
+        android:layout_below="@id/editTextLieuDestination"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextDateDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date de destination"
+        android:layout_below="@id/editTextDateDepart"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prix"
+        android:layout_below="@id/editTextDateDestination"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNbPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de places"
+        android:layout_below="@id/editTextPrix"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_below="@id/editTextNbPlace"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/editTextDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>
