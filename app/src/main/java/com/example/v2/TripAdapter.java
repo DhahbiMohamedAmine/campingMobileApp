@@ -1,5 +1,4 @@
 package com.example.v2;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,14 +8,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class TripAdapter extends RecyclerView.Adapter<TripAdapter.TripViewHolder> {
-
+    //attribue
     private List<Trip> trips;
     private OnTripClickListener listener;
 
     public interface OnTripClickListener {
         void onTripClick(Trip trip);
     }
-
+    //constructeur
     public TripAdapter(List<Trip> trips, OnTripClickListener listener) {
         this.trips = trips;
         this.listener = listener;
@@ -65,9 +64,9 @@ public class TripAdapter extends RecyclerView.Adapter<TripAdapter.TripViewHolder
             if (trip.getDateDepart() != null && !trip.getDateDepart().isEmpty()) {
                 try {
                     String[] dateParts = trip.getDateDepart().split("T");
-                    formattedDate = dateParts[0]; // twali form yyyy-mm-dd
+                    formattedDate = dateParts[0]; //  form yyyy-mm-dd
                 } catch (Exception e) {
-                    formattedDate = trip.getDateDepart(); // snn format 3adi
+                    formattedDate = trip.getDateDepart(); // format normal
                 }
             }
             textViewDepartureDate.setText("Date de départ: " + formattedDate);

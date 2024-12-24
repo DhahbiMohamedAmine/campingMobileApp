@@ -1,6 +1,7 @@
 package com.example.v2;
 
 public class LoginRequest {
+    //attribue
     private String email;
     private String password;
     public LoginRequest(String email, String password) {

@@ -11,6 +11,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 public class LoginActivity extends AppCompatActivity {
+    //attribue
     private EditText editTextEmail;
     private EditText editTextPassword;
     private Button buttonLogin;
@@ -30,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
+//login
     private void login() {
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
@@ -61,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
                     } catch (Exception e) {
                         e.printStackTrace();}
                     Toast.makeText(LoginActivity.this, errorBody != null ? errorBody : "Login failed", Toast.LENGTH_SHORT).show();}}
-
+//onfailure
             @Override
             public void onFailure(Call<LoginResponse> call, Throwable t) {
                 progressBar.setVisibility(View.GONE);

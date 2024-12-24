@@ -1,6 +1,7 @@
 package com.example.v2;
 
 public class User {
+    //attribue
     private int id;
     private String email;
     private String type;

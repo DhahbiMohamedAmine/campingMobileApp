@@ -9,10 +9,12 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 public class AddTripActivity extends AppCompatActivity {
+    //attribue
     private EditText editTextType, editTextLieuDepart, editTextLieuDestination,
             editTextDateDepart, editTextDateDestination, editTextPrix,
             editTextNbPlace, editTextDescription;
     private Button buttonSubmit;
+    //methode oncreate
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,7 @@ public class AddTripActivity extends AppCompatActivity {
         }
         return true;
     }
+    // submit trip
     private void submitTrip() {
         Trip newTrip = new Trip();
         newTrip.setType(editTextType.getText().toString().trim());

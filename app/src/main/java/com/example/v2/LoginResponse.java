@@ -1,6 +1,7 @@
 package com.example.v2;
 
 public class LoginResponse {
+    //attribue
     private String message;
     private String token;
     private User user;

@@ -7,6 +7,7 @@ import retrofit2.Call;
 import retrofit2.http.*;
 
 public interface TripApi {
+    //les api
     @GET("trip/get")
     Call<List<Trip>> getAllTrips();
 
